@@ -1,3 +1,5 @@
+//This file is defining the structure (or shape) of the data. It's similar to how you'd define a Mongoose schema in JavaScript.
+
 package de.linh.movies;
 
 import lombok.AllArgsConstructor;
@@ -11,7 +13,7 @@ import org.springframework.data.mongodb.core.mapping.DocumentReference;
 import javax.swing.plaf.BorderUIResource;
 import java.util.List;
 
-@Document(collection = "movies")//this notation to note this class presents each document in the movies collections
+@Document(collection = "collections1")//this notation to note this class presents each document in the movies collections ** the collection name needs to be the collection name in mongodb
 @Data//take care of getter setter and toString methods
 @AllArgsConstructor//creating a Constructor that takes all the private fields/variables as args
 @NoArgsConstructor//Constructor takes no args
